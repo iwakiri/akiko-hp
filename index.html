@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>岩切晃子 | 希望のある未来を、ともに考える</title>
+<style>
+  :root {
+    --ink: #2b2b28;
+    --sub: #6b6b64;
+    --bg: #fdfdfb;
+    --accent: #a8763e;
+    --line: #e8e4dc;
+    --max: 720px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+    line-height: 1.9;
+    font-size: 17px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: rgba(253,253,251,0.92);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid var(--line);
+    z-index: 10;
+  }
+  nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  nav a {
+    color: var(--sub);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  nav a:hover { color: var(--accent); }
+
+  section {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 96px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  .hero {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    text-align: center;
+  }
+  .hero .name {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: var(--sub);
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin: 0 0 28px;
+  }
+  .hero p {
+    color: var(--sub);
+    font-size: 16px;
+  }
+
+  h2.section-title {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin: 0 0 40px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 16px;
+  }
+  p { margin: 0 0 20px; }
+
+  ul.plain {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+  }
+  ul.plain li {
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  ul.plain li:last-child { border-bottom: none; }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+  .tag {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 12px;
+    color: var(--sub);
+    border: 1px solid var(--line);
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+
+  .todo {
+    display: inline-block;
+    color: #b0a898;
+    font-style: italic;
+    font-size: 14px;
+    border-bottom: 1px dashed #d8d0c0;
+  }
+
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--line);
+  }
+  .timeline li {
+    position: relative;
+    padding: 4px 0 36px 28px;
+  }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .timeline .label {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 12px;
+    color: var(--sub);
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .contact-box {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: var(--bg);
+    background: var(--accent);
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 48px 24px 80px;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    font-size: 12px;
+    color: var(--sub);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#now">Now</a>
+    <a href="#projects">Projects</a>
+    <a href="#future-meeting">未来会議</a>
+    <a href="#talks">Talks</a>
+    <a href="#writing">Writing</a>
+    <a href="#library">Library</a>
+    <a href="#music">Music</a>
+    <a href="#faith">Faith &amp; Values</a>
+    <a href="#timeline">Life Timeline</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="name">岩切晃子 &nbsp;IWAKIRI AKIKO</div>
+  <h1>希望のある未来は、<br>一人ではつくれない。<br>人が出会い、語り、学び、<br>ともに歩む場を企画しています。</h1>
+  <p>編集者として33年。<br>イベントを企画し、コミュニティを育て、<br>AI時代の「人のつながり」を考えています。</p>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About</h2>
+  <p>出版社で33年間、編集の仕事をしてきました。Developers Summitの企画・運営にも携わり、技術者たちが未来を語り合う場をつくってきました。</p>
+  <p>編集という仕事を通じて、人と人、アイデアとアイデアをつなぐことの面白さを知りました。その後、技術コミュニティの運営に関わるようになり、AIという新しい技術と出会って、「人にしかできないこと」を考えるようになりました。</p>
+  <p>同じ頃、カトリック信仰との出会いもあり、共通善についても深く考えるようになりました。洗礼名は「イザベリナ」です。</p>
+  <p>今は、出版・イベント・コミュニティ・AI・信仰。それぞれ異なる世界をつなぎながら、人が集い、学び、希望を語り合える場をつくることに取り組んでいます。</p>
+</section>
+
+<section id="now">
+  <h2 class="section-title">Now — 今取り組んでいること</h2>
+  <ul class="plain">
+    <li>AI駆動開発を学んでいます</li>
+    <li>技術コミュニティを支援しています</li>
+    <li>聖歌の先唱を練習しています</li>
+    <li>共通善について勉強しています</li>
+  </ul>
+  <p><span class="todo">最終更新日をここに入れてください</span></p>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="tag-row">
+    <span class="tag">イベント企画</span>
+    <span class="tag">コミュニティ運営</span>
+    <span class="tag">AI活用</span>
+    <span class="tag">講演</span>
+    <span class="tag">執筆</span>
+    <span class="tag">読書会</span>
+  </div>
+  <ul class="plain">
+    <li><h3 style="margin-bottom:6px;">Laudato Si' 読書会</h3><span class="todo">活動内容・開催頻度を記入してください</span></li>
+    <li><span class="todo">その他のプロジェクトを追加してください</span></li>
+  </ul>
+</section>
+
+<section id="future-meeting">
+  <h2 class="section-title">未来会議 — Future Meetings</h2>
+  <p>「未来会議」は、希望のある未来をともに考えるための対話の場です。</p>
+  <h3>扱いたいテーマ</h3>
+  <div class="tag-row">
+    <span class="tag">AI</span>
+    <span class="tag">教育</span>
+    <span class="tag">地域</span>
+    <span class="tag">信仰</span>
+    <span class="tag">共通善</span>
+    <span class="tag">技術</span>
+    <span class="tag">働き方</span>
+  </div>
+  <h3>なぜ始めようと思ったのか</h3>
+  <p><span class="todo">きっかけ・想いをここに書いてください</span></p>
+  <h3>過去の開催レポート</h3>
+  <p><span class="todo">準備中</span></p>
+  <h3>次回開催案内</h3>
+  <p><span class="todo">準備中</span></p>
+</section>
+
+<section id="talks">
+  <h2 class="section-title">Talks</h2>
+  <ul class="plain">
+    <li><h3 style="margin-bottom:6px;">WiA Tokyo</h3><span class="todo">登壇タイトル・資料リンクを追加してください</span></li>
+    <li><h3 style="margin-bottom:6px;">Agile Leaders Summit</h3><span class="todo">登壇タイトル・資料リンクを追加してください</span></li>
+    <li><h3 style="margin-bottom:6px;">Developers Summit</h3><span class="todo">登壇タイトル・資料リンクを追加してください</span></li>
+    <li><h3 style="margin-bottom:6px;">RSGT</h3><span class="todo">登壇タイトル・資料リンクを追加してください</span></li>
+    <li><h3 style="margin-bottom:6px;">その他登壇</h3><span class="todo">準備中</span></li>
+  </ul>
+</section>
+
+<section id="writing">
+  <h2 class="section-title">Writing</h2>
+  <div class="tag-row">
+    <span class="tag">AI</span>
+    <span class="tag">コミュニティ</span>
+    <span class="tag">編集</span>
+    <span class="tag">信仰</span>
+    <span class="tag">社会</span>
+  </div>
+  <ul class="plain">
+    <li><h3 style="margin-bottom:6px;">カトリックな日々</h3><span class="todo">ブログへのリンクを追加してください</span></li>
+    <li><h3 style="margin-bottom:6px;">仕事のブログ</h3><span class="todo">ブログへのリンクを追加してください</span></li>
+  </ul>
+</section>
+
+<section id="library">
+  <h2 class="section-title">Library</h2>
+  <ul class="plain">
+    <li><h3 style="margin-bottom:6px;">読んでよかった本</h3><span class="todo">準備中</span></li>
+    <li><h3 style="margin-bottom:6px;">おすすめの本</h3><span class="todo">準備中</span></li>
+    <li><h3 style="margin-bottom:6px;">人生を変えた本</h3><span class="todo">準備中</span></li>
+  </ul>
+</section>
+
+<section id="music">
+  <h2 class="section-title">Music</h2>
+  <ul class="plain">
+    <li><h3 style="margin-bottom:6px;">聖歌奉仕</h3><span class="todo">準備中</span></li>
+    <li><h3 style="margin-bottom:6px;">合唱</h3><span class="todo">準備中</span></li>
+    <li><h3 style="margin-bottom:6px;">好きなグレゴリオ聖歌</h3><span class="todo">準備中</span></li>
+    <li><h3 style="margin-bottom:6px;">音楽について考えていること</h3><span class="todo">準備中</span></li>
+  </ul>
+</section>
+
+<section id="faith">
+  <h2 class="section-title">Faith &amp; Values</h2>
+  <p>私にとって信仰とは — <span class="todo">ここに一文を書いてください</span></p>
+  <div class="tag-row">
+    <span class="tag">ミサ</span>
+    <span class="tag">黙想</span>
+    <span class="tag">巡礼</span>
+    <span class="tag">Laudato Si'</span>
+    <span class="tag">教皇文書</span>
+  </div>
+  <p><span class="todo">共通善・AI倫理・教育・環境・対話について考えたことを、ここに綴っていきます。</span></p>
+</section>
+
+<section id="timeline">
+  <h2 class="section-title">Life Timeline</h2>
+  <ul class="timeline">
+    <li><span class="label">PUBLISHING</span>出版社時代</li>
+    <li><span class="label">MANAGEMENT</span>取締役時代</li>
+    <li><span class="label">INDEPENDENCE</span>独立</li>
+    <li><span class="label">FAITH</span>信仰との出会い</li>
+    <li><span class="label">AI</span>AIとの出会い、そして今</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-box">
+    <p>講演依頼・イベント相談・コミュニティづくり相談は、こちらからお願いします。</p>
+    <a class="btn" href="#" id="contact-link">お問い合わせフォーム</a>
+    <p style="margin-top:20px;"><span class="todo">Googleフォームを作成後、上のボタンのリンク先(href)を差し替えてください</span></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Akiko Iwakiri
+</footer>
+
+</body>
+</html>
